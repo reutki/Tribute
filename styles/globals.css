@@ -1,16 +1,963 @@
-html,
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/*...main...*/
+* {
+
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
 }
 
-a {
-  color: inherit;
+body {
+  margin: 0;
+  padding: 0;
+}
+div{
+  border:3px solid red;
+}
+@media only screen and (max-width: 1920px){
+#main {
+  background-color: rgba(58, 74, 105, 1);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex: 1;
+
+}
+
+/*...page1...*/
+.page1 {
+  margin-left: 500px;
+  margin-top: 102px;
+  bottom: 108px;
+  background-color: white;
+  height: 814px;
+  width: 1420px;
+
+}
+
+#navbar {
+
+  display: inline-flex;
+  padding-left: 500px;
+  list-style: none;
+
+}
+
+#navbar li {
+  list-style: none;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+#navbar a {
+  padding-left: 55px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-top: 30px;
+}
+#subcontainer_mobile{
+  display: none;
+}
+#tribute-link {
+  font-size: 64px;
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: 20px;
+  padding-left: 100px;
+  text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+  transform: matrix(1, 0, 0, 1, 0, 0);
+
 }
 
-* {
-  box-sizing: border-box;
+nav a:visited {
+  color: black;
 }
+
+nav a {
+  font-size: 24px;
+  text-decoration: none;
+
+}
+
+#subcontainer {
+  display: flex;
+  flex-direction: row;
+  padding-top: 120px;
+}
+
+#name1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 43px;
+
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+  padding-left: 110px;
+  align-items: center;
+
+
+}
+
+#title p {
+  padding: 15px;
+  align-items: center;
+}
+
+#tribute-info {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+
+}
+
+#img-caption {
+  font-size: 19px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  width: 522.57px;
+
+}
+
+#year {
+  color: rgba(58, 84, 138, 0.87);
+  font-size: 64px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+#image {
+  height: auto;
+  width: 522.57px;
+  padding-bottom: 52px;
+}
+
+#img-div {
+  padding-left: 103px;
+}
+
+#arrowdown{
+  margin-top: 0px;
+  margin-left: 30vw;
+  width:2vw;
+}
+
+
+
+
+/*...page2...*/
+/* De terminat!!!!!!*/
+.page2 {
+  height: 813px;
+  width: 100%;
+  margin-top: 120px;
+  background-color: white;
+  }
+
+#arrows {
+  margin-left: 50%;
+  margin-bottom: 0%;
+
+}
+#info1{
+  margin-top:40px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#info2{
+   display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+#date-description2{
+  width:500px;
+}
+
+#arrow2 {
+  padding-left: 20px;
+}
+
+#container2 {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 300px;
+
+}
+
+#dates2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  float: left;
+}
+#date-description1 {
+  width: 500px;
+}
+
+#date1,
+#date2,#date3,#date4,#date5,#date6,#date7,#date8 {
+  margin-bottom: 30px;
+  background-color: rgba(58, 84, 138, 0.87);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:500px;
+  padding: 10px 0 10px 0 ;
+}
+
+
+
+/*...page3...*/
+
+.page3 {
+  height: 813px;
+  width: 100%;
+  background-color: white;
+  margin-top: 120px;
+  }
+
+#container3 {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 300px;
+  }
+
+#info3 {
+  margin-top:40px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+    }
+
+#dates3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  float: left;
+}
+
+#date-description3 {
+  width: 500px;
+}
+
+#forestservice_logo {
+  float: right;
+}
+
+#years-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-inline: 300px;
+  align-items: center;
+  margin-bottom: 55px;
+  margin-top: 60px;
+}
+
+#info4 {
+  
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#dates4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  float: right;
+}
+
+#date-forestwork {
+  width: 400px;
+}
+
+#forestservice_logo {
+  float: left;
+}
+#year1, #year2,#year3, #year4, #year5, #year6, #year7, #year8 , #year9,#year10{
+  color: rgba(58, 84, 138, 0.87);
+  font-size: 64px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+/*....page4....*/
+.page4 {
+  height: 813px;
+  width: 100%;
+  background-color: white;
+  margin-top: 120px;
+
+}
+
+#container4 {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 300px;
+
+
+}
+
+#info5 {
+  margin-top:40px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#dates5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  float: right;
+}
+
+#date-description5 {
+  width: 500px;
+}
+
+#foto_couple {
+  float: left;
+}
+
+#date-description6{
+  width:500px;
+}
+
+#years-container4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-inline: 300px;
+  align-items: center;
+  margin-bottom: 55px;
+  margin-top: 60px;
+}
+
+#info6 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#dates6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  float: right;
+}
+
+
+
+/*...page5...*/
+
+.page5 {
+  height: 813px;
+  width: 100%;
+  background-color: white;
+  margin-top: 120px;
+
+}
+#date8{
+  background-color: rgba(58, 84, 138, 0.87);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  width:533px;
+}
+
+
+#container5 {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 300px;
+
+
+}
+
+#info7 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:40px;
+}
+
+#dates7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  float: left;
+}
+
+#date-description7 {
+  width: 500px;
+}
+
+#forestservice_logo {
+  float: right;
+}
+
+#years-container5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-inline: 300px;
+  align-items: center;
+  margin-bottom: 55px;
+  margin-top: 60px;
+}
+
+#info8 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#dates8 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  
+}
+
+#date-forestwork {
+  width: 400px;
+}
+
+#forestservice_logo {
+  float: left;
+}
+
+
+#date-description8{
+  width:500px;
+  
+}
+
+
+/*....page6......*/
+
+.page6 {
+  margin-right: 500px;
+  margin-top: 102px;
+  bottom: 108px;
+  background-color: white;
+  height: 814px;
+  width: 1420px;
+  margin-bottom: 90px;
+  
+}
+
+#container6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#last_title {
+  margin-bottom: 60px;
+  background-color: rgba(58, 84, 138, 0.87);
+  padding: 10px;
+  margin-top: 93px;
+}
+
+#title_description {
+  margin-bottom: 50px;
+}
+
+#year9 {
+  color: rgba(58, 84, 138, 0.87);
+  font-size: 64px;
+  font-weight: 500;
+  margin-bottom: 15px;
+
+}
+
+#last_picture {
+  margin-bottom: 45px;
+}
+
+
+
+#info1,#info2,#info3,#info4,#info5,#info6,#info7,#info8{
+  font-size: 18px;
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+}
+#year3_mobile,#year4_mobile,#year5_mobile,#year6_mobile,#year7_mobile,#year8_mobile,#year9_mobile,#year10_mobile{
+ display:none;
+}
+}
+/*.......................................Tablet version............................*/
+
+@media only screen and (max-width: 1024px) {
+  
+ #main{
+  width:100vw;
+  height:auto;
+
+ } 
+ #subcontainer_mobile{
+  display: none;
+}
+ #info1,#info2,#info3,#info4,#info5,#info6,#info7,#info8{
+  margin-left:25px;
+  margin-right: 25px;
+  width:90vw;
+}
+ #year3_mobile,#year4_mobile,#year5_mobile,#year6_mobile,#year7_mobile,#year8_mobile,#year9_mobile,#year10_mobile{
+  display:block;
+ }
+  img{ 
+    display: block;
+    width:100%;
+  }
+  #container2,#container3,#container4,#container5,#container6{
+    width: 100vw;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  
+  }
+ #year9, #year3_mobile,#year4_mobile,#year5_mobile,#year6_mobile,#year7_mobile,#year8_mobile,#year9_mobile,#year10_mobile{
+    font-size: 36px;
+    font-family: 'ROboto', sans-serif;
+    font-weight: 500;  
+    text-align: center;
+    color: rgba(58, 84, 138, 0.87);
+  }
+  #years-container,#years-container4,#years-container5{
+    display: none;
+   }
+   #arrows{
+     display:flex;
+    width:10vw;
+    margin-left: 50vw;
+    margin-top: 19vw;
+   }
+  /*.....................Page1...................*/
+  #page1,#page2,#page3,#page4,#page5,#page6 {
+    display: block;
+    width:100%;
+    background-color:#fff;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+  nav{
+    width:100%;
+  }
+  nav #navbar{
+    padding: 0;
+    float:right;
+    margin-right: 0;
+    width:50vw;
+
+  }
+  #navbar li{
+    float:right;
+  }
+  nav #tribute-link{
+    float:left;
+    font-size: 48px;
+    margin-left:0;
+    width:50vw;
+  }
+  #subcontainer{
+    width:100vw;
+
+  }
+  #img-div{
+    width:50vw;
+  }
+  #title{
+    width:50vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+  #name1{
+    font-size: 27px;
+    font-weight: 700;
+  }
+  #tribute-info{
+    font-size: 24px;
+    font-weight: 400;
+  }
+    
+
+  
+  #year{
+    font-size: 36px;
+  }
+  #image{
+    width:40vw;
+  }
+  #img-caption{
+    width:40vw;
+
+  }
+#arrow1{
+    width:5vw;
+    margin-left: 51vw;
+    margin-top: 10vw;
+
+
+  }
+   /*........................................*/
+    /*.....................Page2...................*/
+.page2{
+  width:100vw;
+ 
+ 
+}
+.dates2{
+
+  width:40vw;
+  font-size:16px;
+
+}
+
+#date-description1 {
+  font-size: 14px;
+  width:100%;
+}
+#date1{
+  width: 100%;
+}
+#family_foto{
+  width:40vw;
+  height:100%;
+}
+.dates3{
+  width:40vw;
+  font-size:16px;
+}
+
+#date-description2 {
+  font-size: 14px;
+  width:100%;
+}
+#date2{
+  width: 100%;
+}
+#photo_university{
+  width:40vw;
+  height:100%;
+}
+
+#info1{
+  margin-top:5vh;
+  margin-bottom: 5vh;
+}
+#info2{
+  margin-top:5vh;
+  margin-bottom: 5vh;
+}
+#arrows{
+  margin-left:48vw;
+  margin-top: 5vh;
+}
+
+    /*.....................Page3...................*/
+
+#dates4, #dates5{
+  width:40vw;
+  font-size:16px;
+}
+
+#date-description3 {
+  font-size: 14px;
+  width:100%;
+}
+#date4,#date5, #date3{
+  width: 100%;
+  
+}
+#forestservice_logo, #forestwork{
+  width:40vw;
+  height:auto;
+}
+
+#info3{
+  margin-top:5vh;
+  margin-bottom: 5vh;
+  justify-content: space-between;
+ 
+}
+#info4{
+  margin-top:5vh;
+  margin-bottom: 5vh;
+  justify-content: space-between;
+
+}
+
+    /*.....................Page4...................*/
+#dates6, #dates7{
+  width:40vw;
+  font-size:16px;
+}
+
+#date-description5,#date-description6 {
+  font-size: 14px;
+  width:100%;
+}
+#date6,#date6{
+  width: 100%;
+  
+}
+#foto_couple, #women{
+  width:40vw;
+  height:auto;
+}
+
+#info5{
+  margin-top:5vh;
+  margin-bottom: 5vh;
+  justify-content: space-between;
+ 
+}
+#info6{
+  margin-top:5vh;
+  margin-bottom: 5vh;
+  justify-content: space-between;
+
+}
+
+    /*.....................Page5...................*/
+
+#dates8, #dates9{
+  width:40vw;
+  font-size:16px;
+}
+
+#date-description7,#date-description8 {
+  font-size: 14px;
+  width:100%;
+}
+#date7,#date8{
+  width: 100%;
+  
+}
+#people_field, #dr_speaks{
+  width:40vw;
+  height:auto;
+}
+
+#info7{
+  margin-top:5vh;
+  margin-bottom: 5vh;
+  justify-content: space-between;
+ 
+}
+#info8{
+  margin-top:5vh;
+  margin-bottom: 5vh;
+  justify-content: space-between;
+
+}
+
+    /*.....................Page6...................*/
+
+.page6{
+  padding-top: 10vh;
+  margin:0;
+  width:100vw;
+  height:814px;
+}
+#container6{
+
+  width:100vw;
+}
+#last_picture{
+  width: 50vw;
+  height:100%;
+}
+#subcontainer_mobile{
+  display: none;
+}
+}
+
+    /*.....................Mobile version...................*/
+
+
+    @media only screen and (max-width: 600px) {
+  
+      #main{
+       width:100vw;
+       height:auto;
+     
+      } 
+      #subcontainer_mobile{
+        display: block;
+      }
+      #info1,#info2,#info3,#info4,#info5,#info6,#info7,#info8{
+       margin-left:25px;
+       margin-right: 25px;
+       width:90vw;
+     }
+      #year3_mobile,#year4_mobile,#year5_mobile,#year6_mobile,#year7_mobile,#year8_mobile,#year9_mobile,#year10_mobile{
+       display:block;
+      }
+       img{ 
+         display: block;
+         width:100%;
+       }
+       #subcontainer,#container2,#container3,#container4,#container5,#container6{
+         width: 100vw;
+         padding: 0;
+         display: flex;
+         flex-direction: column;
+       }
+      #year9, #year3_mobile,#year4_mobile,#year5_mobile,#year6_mobile,#year7_mobile,#year8_mobile,#year9_mobile,#year10_mobile{
+         font-size: 36px;
+         font-family: 'ROboto', sans-serif;
+         font-weight: 500;  
+         text-align: center;
+         color: rgba(58, 84, 138, 0.87);
+       }
+       #years-container,#years-container4,#years-container5{
+         display: none;
+        }
+        #arrows{
+          display:flex;
+         width:10vw;
+         margin-left: 50vw;
+         margin-top: 19vw;
+        }
+
+        #main{
+          width:100vw;
+          display:flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        /*..................Page1......................*/
+        .page1{
+          margin-top:3vw;
+          width:97vw;
+          height:814px;
+          margin-bottom: 3vw;
+          margin-left:3vw;
+          margin-right:3vw;
+        }
+        .page2, .page3, .page4, .page5, .page6{
+          margin-top: 0;
+          margin-bottom: 0;
+          height:635px;
+        }
+        #arrows{
+          display:none;
+        }
+      nav{
+        width:100vw;
+        padding:0 14px 0 14px;
+      }
+      #tribute-link{
+        font-size: 36px;
+        font-weight:700;
+        letter-spacing: 0px;
+        margin-left:0;
+        padding:0;
+      }
+      #navbar{
+        font-size: 12px;
+      }
+      #navbar a{
+        padding-left:15px;
+      }
+
+        #subcontainer_mobile{
+          width:100vw;
+        }
+        #subcontainer{
+          display:none;
+        }
+      #title{
+          width:100vw;
+          justify-content: center;
+          
+        }
+#img-div{
+  width: 80vw;
+  justify-content: center;
+  padding: 0;
+}
+  
+#image{
+  width:80vw;
+  height: auto;
+  
+}
+#arrow1{
+  margin-top: 1vh;
+  margin:0;
+  
+}
+#container6{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+#people_field{
+  height:100%;
+  width:40vw;
+}
+#foto_couple{
+  height:100%;
+  width:40vw;
+}
+#arrowdown{
+  margin-left: 48vw;
+  width:4vw;
+}
+      }
+
+
+
